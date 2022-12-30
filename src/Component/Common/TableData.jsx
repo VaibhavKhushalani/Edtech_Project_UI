@@ -2,11 +2,13 @@ import React from "react";
 import Table from "react-bootstrap/Table";
 
 const TableData = ({ state, setState, setId, select }) => {
+  const Role = localStorage.getItem("role");
   const Remove = (index) => {
     let data = [...state];
     data.splice(index, 1);
     setState(data);
   };
+
   return (
     <div className="table-main">
       <Table striped bordered hover variant="dark">
@@ -32,7 +34,7 @@ const TableData = ({ state, setState, setId, select }) => {
                 )}
               </>
             )}
-            <th>Action</th>
+            {Role === "admin" && <th>Action</th>}
           </tr>
         </thead>
         <tbody>
@@ -59,15 +61,18 @@ const TableData = ({ state, setState, setId, select }) => {
                     )}
                   </>
                 )}
-                <td className="d-flex justify-content-around">
-                  <span className="table-btn" onClick={() => setId(ele.id)}>
-                    Update
-                  </span>
-                  <span className="table-btn" onClick={() => Remove(id)}>
-                    {" "}
-                    Delete
-                  </span>
-                </td>
+
+                {Role === "admin" && (
+                  <td className="d-flex justify-content-around">
+                    <span className="table-btn" onClick={() => setId(ele.id)}>
+                      Update
+                    </span>
+                    <span className="table-btn" onClick={() => Remove(id)}>
+                      {" "}
+                      Delete
+                    </span>
+                  </td>
+                )}
               </tr>
             );
           })}

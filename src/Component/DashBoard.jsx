@@ -4,6 +4,7 @@ import TableData from "./Common/TableData";
 import Button from "react-bootstrap/Button";
 import Popup from "./Common/Popup";
 import Data from "../data.json";
+import ClassData from "../class.json";
 const DashBoard = () => {
   const Role = localStorage.getItem("role");
   const display =
@@ -14,7 +15,15 @@ const DashBoard = () => {
   const [id, setId] = useState("");
 
   useEffect(() => {
-    setState(Data);
+    if (select === "class") {
+      if (Role === "student") {
+        let data = [...ClassData];
+        data.splice(1, 9);
+        setState(data);
+      } else {
+        setState(ClassData);
+      }
+    } else setState(Data);
   }, [select]);
 
   return (

@@ -52,7 +52,7 @@ const Popup = ({ show, setShow, setState, state, id, setId, select }) => {
   return (
     <Modal size="lg" centered show={show} onHide={handleClose}>
       <Modal.Header closeButton>
-        <Modal.Title>Add Student</Modal.Title>
+        <Modal.Title>ADD {select.toUpperCase()}</Modal.Title>
       </Modal.Header>
       <Form onSubmit={updateData}>
         <Modal.Body>
@@ -152,7 +152,7 @@ const Popup = ({ show, setShow, setState, state, id, setId, select }) => {
         </Modal.Body>
         <Modal.Footer className="center">
           <Button variant="outline-primary" type="submit">
-            Update Data
+            {id === "" ? "Add Data" : " Update Data"}
           </Button>
           <Button variant="outline-secondary" onClick={handleClose}>
             Cancel
