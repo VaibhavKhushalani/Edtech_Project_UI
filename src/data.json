@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "arun",
+    "gender": "Male",
+    "class": "X",
+    "physics": 88,
+    "math": 87,
+    "english": 78
+  },
+  {
+    "id": 2,
+    "name": "rajesh",
+    "class": "X",
+    "gender": "Male",
+    "physics": 96,
+    "math": 100,
+    "english": 95
+  },
+  {
+    "id": 3,
+    "name": "moorthy",
+    "class": "X",
+    "gender": "Male",
+    "physics": 89,
+    "math": 90,
+    "english": 70
+  },
+  {
+    "id": 4,
+    "name": "raja",
+    "class": "X",
+    "gender": "Male",
+    "physics": 30,
+    "math": 25,
+    "english": 40
+  },
+  {
+    "id": 5,
+    "name": "usha",
+    "class": "X",
+    "gender": "Female",
+    "physics": 67,
+    "math": 45,
+    "english": 78
+  },
+  {
+    "id": 6,
+    "name": "priya",
+    "class": "X",
+    "gender": "Female",
+    "physics": 56,
+    "math": 46,
+    "english": 78
+  },
+  {
+    "id": 7,
+    "name": "Sundar",
+    "class": "X",
+    "gender": "Male",
+    "physics": 12,
+    "math": 67,
+    "english": 67
+  },
+  {
+    "id": 8,
+    "name": "Kavitha",
+    "class": "X",
+    "gender": "Female",
+    "physics": 78,
+    "math": 71,
+    "english": 67
+  },
+  {
+    "id": 9,
+    "name": "Dinesh",
+    "class": "X",
+    "gender": "Male",
+    "physics": 56,
+    "math": 45,
+    "english": 67
+  },
+  {
+    "id": 10,
+    "name": "Hema",
+    "class": "X",
+    "gender": "Female",
+    "physics": 71,
+    "math": 90,
+    "english": 23
+  }
+]

@@ -1,38 +1,61 @@
-.App {
+.app-main {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(230, 245, 255);
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 1px solid rgb(117, 117, 117);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  color: rgb(64, 63, 63);
+  box-shadow: rgb(38, 57, 77) 0px 10px 30px -10px;
+}
+.login-box .form-control {
+  width: 30em;
+}
+.login-box h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: rgb(64, 63, 63);
+}
+.login-btn {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.login-btn .btn {
+  width: 10em;
+}
+
+.table-main {
+  margin: 0 3em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-control,
+.form-select:focus,
+.form-control:focus {
+  box-shadow: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table-btn {
+  cursor: pointer;
+  color: rgb(255, 226, 226);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.table-btn:hover {
+  cursor: pointer;
+  color: rgb(240, 63, 63);
 }
